@@ -1,5 +1,6 @@
 import junit.framework.TestCase;
 
+// Test er ikke ændret fra start.
 public class MainTest extends TestCase {
 
 

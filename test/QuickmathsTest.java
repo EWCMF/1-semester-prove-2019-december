@@ -2,6 +2,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+// Tests her er skrevet selv.
 public class QuickmathsTest {
 
     @Test

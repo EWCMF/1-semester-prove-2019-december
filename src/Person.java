@@ -23,6 +23,8 @@ public class Person {
     int vaegt;  // 76 kg
     double karaktergennemsnit; // 5.33
     int eksamensKarakterer; // 7, 12, -3, 4, 2, 10
+
+    // Date klassen giver samme form som det viste nedenunder når klassens toString metode bruges.
     Date opdateretDato; // Sun Jan 08 00:00:00 CET 1978
 
     // TODO Vis eksempler på typecasting

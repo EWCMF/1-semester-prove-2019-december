@@ -1,11 +1,14 @@
 package quiz;
 
 public class Sporgsmaal implements Translatable {
+    // Private instansvariabel så der skal bruges getters og setters for at tilgå dem.
     private String sporgsmaalTekst;
     private int point;
     private Svar[] svar;
     private int rigtigeSvarIndex;
 
+
+    // Alle setters og getters lavet automatisk med IntelliJ.
 
     public String getSporgsmaalTekst() {
         return sporgsmaalTekst;
@@ -45,6 +48,8 @@ public class Sporgsmaal implements Translatable {
         this.rigtigeSvarIndex = rigtigeSvarIndex;
     }
 
+
+    // Metoden som kræves af interfacen. Den er den samme som i Svar klassen men kunne sagtens være anderledes.
     @Override
     public String translate(String language) {
         if (language.equals(Language.Danish))

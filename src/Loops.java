@@ -30,6 +30,7 @@ public class Loops {
      * Viser en liste med brugere i konsollen
      */
     public void printBrugereArr() {
+        // Mellemrummet i loopet laves med en ekstra String og så konkatenering.
         for (int i = 0; i < getBrugere().length; i++) {
             System.out.print(getBrugere()[i] + " ");
         }
@@ -42,6 +43,7 @@ public class Loops {
     public void printBrugereReverseArr() {
         String[] brugere = getBrugere();
 
+        // Arrays.sort og Collections.reverseOrder fra java gør det nemt at sortere som opgaven vil have.
         Arrays.sort(brugere, Collections.reverseOrder());
         for (int i = 0; i < brugere.length; i++) {
             System.out.print(brugere[i] + " ");
@@ -51,10 +53,12 @@ public class Loops {
 
     public void waitingFor0() {
         Scanner scanner = new Scanner(System.in);
+        // input initialiseres med default input -1 således at loopet ikke klager.
         int input = -1;
 
         while (input != 0) {
             System.out.print("Venter på 0! Skriv et tal... ");
+            // Her ændres input med brugerens tast således at loopet kan stoppe hvis der skrives 0.
             input = scanner.nextInt();
         }
         System.out.println("Du har tastet 0. Så det er slut!");
