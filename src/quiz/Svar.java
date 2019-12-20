@@ -1,6 +1,6 @@
 package quiz;
 
-public class Svar {
+public class Svar implements Translatable {
     private String svarTekst;
 
     public Svar(String svarTekst) {
@@ -14,5 +14,15 @@ public class Svar {
 
     public void setSvarTekst(String svarTekst) {
         this.svarTekst = svarTekst;
+    }
+
+    @Override
+    public String translate(String language) {
+        if (language.equals(Language.Danish))
+            return "Oversættelse er ikke muligt endnu";
+        else if (language.equals(Language.English))
+            return "Translation is not available yet";
+        else
+            return "";
     }
 }

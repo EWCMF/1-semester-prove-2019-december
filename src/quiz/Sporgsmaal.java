@@ -1,6 +1,6 @@
 package quiz;
 
-public class Sporgsmaal {
+public class Sporgsmaal implements Translatable {
     private String sporgsmaalTekst;
     private int point;
     private Svar[] svar;
@@ -43,5 +43,15 @@ public class Sporgsmaal {
 
     public void setRigtigeSvarIndex(int rigtigeSvarIndex) {
         this.rigtigeSvarIndex = rigtigeSvarIndex;
+    }
+
+    @Override
+    public String translate(String language) {
+        if (language.equals(Language.Danish))
+            return "Oversættelse er ikke muligt endnu";
+        else if (language.equals(Language.English))
+            return "Translation is not available yet";
+        else
+            return "";
     }
 }
