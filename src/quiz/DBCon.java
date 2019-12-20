@@ -9,6 +9,7 @@ public class DBCon {
     static Connection connect(){
         Connection conn;
 
+        // Hardcodede kode så husk at ændre hvis den er anderledes.
         try{
             conn = DriverManager.getConnection("jdbc:mysql://localhost/quiz", "root", "CodeWarrior8");
         }catch (SQLException e){
