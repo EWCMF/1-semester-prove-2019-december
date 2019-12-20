@@ -6,11 +6,16 @@
  */
 
 public class Main {
-
-    // TODO Din kode her
+    public static void main(String[] args) {
+        Main main = new Main();
+        System.out.println(main.hello("András"));
+    }
 
     public String hello(String navn) {
-        return "";
+        if (navn.length() == 0)
+            return "Hello World!";
+        else
+            return "Hello " + navn + "!";
     }
 
 }
