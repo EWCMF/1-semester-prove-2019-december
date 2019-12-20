@@ -27,7 +27,7 @@ CREATE TABLE `quiztable` (
   `sporgsmaal` varchar(100) DEFAULT NULL,
   `svar` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `quiztable` (
 
 LOCK TABLES `quiztable` WRITE;
 /*!40000 ALTER TABLE `quiztable` DISABLE KEYS */;
-INSERT INTO `quiztable` VALUES (1,'Hvad hedder læreren i programmering?','András');
+INSERT INTO `quiztable` VALUES (1,'Hvad hedder læreren i programmering?','András'),(2,'Hvis du vil lære UML, hvem skal du så spørge?','Anders'),(3,'Hvem kan hjælpe dig med at blive IT-millionær?','Karsten');
 /*!40000 ALTER TABLE `quiztable` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-20 10:38:11
+-- Dump completed on 2019-12-20 12:40:10
